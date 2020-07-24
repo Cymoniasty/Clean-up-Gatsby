@@ -1,10 +1,13 @@
 import React from "react"
-import styled from "styled-components";
+import Navigation from "../navigation/navigation";
+import "typeface-muli"
+
 
 const IndexPage = () => (
-
-    <h1>123</h1>
-
+    <>
+        <h1>Animacja navbara</h1>
+        <Navigation/>
+    </>
 )
 
 export default IndexPage
