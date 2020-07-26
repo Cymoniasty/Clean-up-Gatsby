@@ -5,7 +5,6 @@ import "typeface-muli"
 
 const IndexPage = () => (
     <>
-        <h1>Animacja navbara</h1>
         <Navigation/>
     </>
 )
