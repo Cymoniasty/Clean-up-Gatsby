@@ -12,6 +12,12 @@ const GlobalStyle = createGlobalStyle`
     body{
     background-color: #333;
     }
+    
+    svg{
+    transform: translateY(20%);
+    margin-left: 10px;
+
+    }
 `;
 
 const NavigationAside = styled.aside`
@@ -76,10 +82,10 @@ const HamburgerInner = styled.span`
     &::before{
       content: '';
       top: -8px;
+      width: ${({hamburger}) => hamburger ? '70%' : "50%"};
       transition: background-color .2s linear, transform .2s;
       transform: ${({hamburger}) => hamburger ? 'translateY(8px) rotate(135deg)' : "translateY(0) rotate(0)"};
       right: 0;
-      width: 50%;
       height: 3px;
       border-radius:25px;
       position: absolute;
@@ -92,8 +98,6 @@ const HamburgerInner = styled.span`
       border-radius:25px;
       right: 0;
       width: 70%;
-      float: right;
-      text-align: right;
       height: 3px;
       position: absolute;
       transition: background-color .2s linear, transform .2s linear;
